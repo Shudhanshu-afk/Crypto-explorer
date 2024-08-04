@@ -13,7 +13,7 @@ const Coinpage = () => {
   const fetchCoinData = async () => {
     const options = {
       method: 'GET',
-      headers: { accept: 'application/json', 'x-cg-demo-api-key': 'CG-CPbceEtUwoJY49yQeVprVmDH' }
+      headers: { accept: 'application/json', 'x-cg-demo-api-key': 'Your api key' }
     };
 
     await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${curr.name}&ids=${id}`, options)
